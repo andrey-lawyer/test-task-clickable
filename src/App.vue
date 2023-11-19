@@ -24,15 +24,6 @@ useHead({
 html {
   font-size: calc(100vw / 375);
 }
-html {
-  font-size: calc(100vw / 375);
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: calc(100vw / 768);
-  }
-}
 
 @media (min-width: 1920px) {
   html {

@@ -15,7 +15,7 @@ app
       plugins: [
         createLocalStoragePlugin({
           prefix: 'formkit',
-          key: undefined,
+          key: 'key',
           control: undefined,
           maxAge: 3600000,
           debounce: 200,

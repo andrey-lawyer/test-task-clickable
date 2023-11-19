@@ -18,5 +18,6 @@ export default function useCountVisible() {
       visibleCountPassword.value = payload
     })
   }
+
   return { countVisibleEmail, countVisiblePassword, visibleCountPassword, visibleCountEmail }
 }

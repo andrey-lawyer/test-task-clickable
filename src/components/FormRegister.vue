@@ -20,22 +20,21 @@
       label="Email"
       placeholder="Email"
       validation="required|email"
+      validation-visibility="blur"
       :validation-messages="{
         email: 'Provide a valid e-mail address'
       }"
       :classes="{
         input: {
           'input-form': true,
-          'input-email': true
+          'input-email': true,
+          'success-input_email': successEmail ? true : false,
+          'error-input_email': visibleCountEmail !== 0 && emailUi.trim() !== '' ? true : false
         },
         message: { 'message-email': true }
       }"
-      :input-class="
-        successEmail ? 'success-input_email' : visibleCountEmail ? 'error-input_email' : ''
-      "
       :label-class="emailUi.trim() !== '' ? 'label-show_email' : 'label-hide_email'"
       :inner-class="'email-inner'"
-      validation-visibility="live"
       @node="countVisibleEmail"
     />
 
@@ -45,6 +44,7 @@
       v-model="passwordUi"
       label="Password"
       validation="required|length:6"
+      validation-visibility="blur"
       :validation-messages="{
         length: 'password must be at least 6 characters'
       }"
@@ -52,20 +52,15 @@
       :classes="{
         input: {
           'input-form': true,
-          'input-password': true
+          'input-password': true,
+          'success-input_password': successPassword ? true : false,
+          'error-input_password':
+            visibleCountPassword !== 0 && passwordUi.trim() !== '' ? true : false
         },
         messages: { 'messages-email': true }
       }"
-      :input-class="
-        successPassword
-          ? 'success-input_password'
-          : visibleCountPassword
-            ? 'error-input_password'
-            : ''
-      "
       :label-class="passwordUi.trim() !== '' ? 'label-show_password' : 'label-hide_password'"
       :inner-class="'password-inner'"
-      validation-visibility="live"
       @node="countVisiblePassword"
     />
     <FormKit
@@ -152,6 +147,7 @@ const toggle = () => {
 
 const { countVisibleEmail, countVisiblePassword, visibleCountPassword, visibleCountEmail } =
   useCountVisible()
+console.log(visibleCountPassword.value)
 
 const submitHandler = ({ email, password }: IDataSubmit) => {
   console.log({ email, password })

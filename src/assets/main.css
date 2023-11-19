@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Gotham';
+  src:
+    local('Gotham Pro'),
+    url('/fonts/gotham-pro/gothamProRegular.woff') format('woff'),
+    url('/fonts/gotham-pro/gothamProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src:
+    local('Gotham Pro'),
+    url('/fonts/gotham-pro/gothamProBold.woff') format('woff'),
+    url('/fonts/gotham-pro/gothamProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src:
+    url('/fonts/stolzl/stolzl_regular.woff') format('woff'),
+    url('/fonts/stolzl/stolzl_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  src:
+    url('/fonts/stolzl/stolzl_medium.woff') format('woff'),
+    url('/fonts/stolzl/stolzl_medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --background-color: #0b0b0a;
+  --button-color: #ebbe7d;
+  --span-color: #e4c086;
+  --border-input-color: #353535;
+  --background-modal-color: #131313;
+  --placeholder-color: #999999;
+  --font-color: #fcfcfc;
+  --font-title-color: #ffffff;
+  --error-color: #fd4646;
+  --button-disabled: #282828;
+  --button-disabled-background: #1c1c1c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gotham', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

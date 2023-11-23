@@ -55,10 +55,12 @@ const { modelVisible, showModal, closeModal } = useModal()
     line-height: 1.2;
     padding-top: 54rem;
     padding-bottom: 54rem;
+    text-align: start;
   }
 }
 
 .title_span {
+  font-weight: 700;
   color: var(--button-color);
 }
 

@@ -147,7 +147,6 @@ const toggle = () => {
 
 const { countVisibleEmail, countVisiblePassword, visibleCountPassword, visibleCountEmail } =
   useCountVisible()
-console.log(visibleCountPassword.value)
 
 const submitHandler = ({ email, password }: IDataSubmit) => {
   console.log({ email, password })

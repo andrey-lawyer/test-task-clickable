@@ -24,7 +24,7 @@ defineProps({
 <style scoped>
 .modal-content {
   width: 318rem;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     width: 720rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,7 +38,7 @@ defineProps({
   padding-top: 58px;
   padding-bottom: 180rem;
   text-align: center;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     padding-top: 56px;
   }
 }
@@ -68,7 +68,7 @@ defineProps({
     50% 110%,
     120% 77%;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
   .content:before {
     background-size:
       90rem 86rem,
@@ -106,7 +106,7 @@ defineProps({
   text-transform: uppercase;
   margin-top: 24px;
   margin-bottom: 8px;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     padding-top: 47px;
   }
 }

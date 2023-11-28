@@ -276,7 +276,7 @@ watch([emailUi, passwordUi, visibleCountEmail, visibleCountPassword, isChecked],
   line-height: 1;
   letter-spacing: 0.28px;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     top: 0;
     padding-top: 88rem;
     padding-bottom: 88rem;
@@ -293,7 +293,7 @@ watch([emailUi, passwordUi, visibleCountEmail, visibleCountPassword, isChecked],
   line-height: 1.2;
   letter-spacing: 0.4px;
   margin-bottom: 40rem;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 48rem;
   }
 }

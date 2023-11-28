@@ -31,7 +31,7 @@ defineProps({
 
   transition: background-color 0.3s ease-in-out;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     font-size: 20rem;
     line-height: 1.2;
   }

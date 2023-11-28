@@ -25,13 +25,7 @@ html {
   font-size: calc(100vw / 375);
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: calc(100vw / 600);
-  }
-}
-
-@media (min-width: 1920px) {
+@media (min-width: 1024px) {
   html {
     font-size: calc(100vw / 1920);
   }

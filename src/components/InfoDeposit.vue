@@ -33,7 +33,7 @@ const { modelVisible, showModal, closeModal } = useModal()
 .info {
   text-align: center;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     text-align: start;
   }
 }
@@ -50,7 +50,7 @@ const { modelVisible, showModal, closeModal } = useModal()
   padding-top: 44rem;
   padding-bottom: 24rem;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     font-size: 60rem;
     line-height: 1.2;
     padding-top: 54rem;
@@ -72,7 +72,7 @@ const { modelVisible, showModal, closeModal } = useModal()
   color: var(--placeholder-color);
   padding-bottom: 48rem;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     font-size: 24rem;
     line-height: 1.333;
     padding-bottom: 101rem;

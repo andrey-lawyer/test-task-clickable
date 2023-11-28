@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts" name="ModalUi">
-import { watch, defineProps  } from 'vue'
+import { watch, defineProps } from 'vue'
 
 import useMediaScreen from '@/hooks/useMediaScreen'
 import IconCloseMobile from '../icons/IconCloseMobile.vue'
@@ -87,7 +87,7 @@ watch(props, () => {
   background-color: transparent;
   border: none;
   z-index: 999;
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1024px) {
     top: 16rem;
     right: 16rem;
   }

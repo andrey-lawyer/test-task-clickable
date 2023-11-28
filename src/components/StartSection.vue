@@ -37,7 +37,7 @@ import InfoDeposit from './InfoDeposit.vue'
     93% 44.5%;
 
   animation: stars 20s linear infinite;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr;
 
@@ -58,7 +58,7 @@ import InfoDeposit from './InfoDeposit.vue'
 }
 
 .lolipop {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     position: absolute;
     background-image: url('/decor-images/lollipop-1.png');
     width: 244rem;
@@ -71,7 +71,7 @@ import InfoDeposit from './InfoDeposit.vue'
     animation: rotate 5s linear infinite;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
@@ -82,7 +82,7 @@ import InfoDeposit from './InfoDeposit.vue'
   }
 }
 .ship {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     position: absolute;
     background-image: url('/decor-images/ship-1.png');
     width: 251rem;
@@ -100,7 +100,7 @@ import InfoDeposit from './InfoDeposit.vue'
   padding-top: 56rem;
   padding-bottom: 127rem;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     padding-left: 222rem;
     padding-right: 222rem;
     padding-top: 148rem;
@@ -129,7 +129,7 @@ import InfoDeposit from './InfoDeposit.vue'
     50% 12%,
     -10% 12%,
     center;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     background-image: url('/decor-images/girl.png'), url('/decor-images/ball-1.png'),
       url('/decor-images/text.png'), url('/images/background.png');
     background-size:
@@ -146,35 +146,38 @@ import InfoDeposit from './InfoDeposit.vue'
   animation: images 20s linear infinite;
 }
 
-@keyframes images {
-  0% {
-    background-position:
-      0 100%,
-      30% 100%,
-      135% 20%,
-      50% 12%,
-      -10% 12%,
-      center;
-  }
-  50% {
-    background-position:
-      100% 100%,
-      30% 100%,
-      135% 20%,
-      50% 28%,
-      -10% 12%,
-      center;
-  }
-  100% {
-    background-position:
-      0 100%,
-      30% 100%,
-      135% 20%,
-      50% 12%,
-      -10% 12%,
-      center;
+@media screen and (max-width: 1279.9px) {
+  @keyframes images {
+    0% {
+      background-position:
+        0 100%,
+        30% 100%,
+        135% 20%,
+        50% 12%,
+        -10% 12%,
+        center;
+    }
+    50% {
+      background-position:
+        100% 100%,
+        30% 100%,
+        135% 20%,
+        50% 28%,
+        -10% 12%,
+        center;
+    }
+    100% {
+      background-position:
+        0 100%,
+        30% 100%,
+        135% 20%,
+        50% 12%,
+        -10% 12%,
+        center;
+    }
   }
 }
+
 @keyframes stars {
   0% {
     background-position:
@@ -212,7 +215,7 @@ import InfoDeposit from './InfoDeposit.vue'
       93% 44.5%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   @keyframes stars {
     0% {
       background-position:
